@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" type="images/jpg" href="../pipa/images/favicon.png">
+        <title>
+            ABC RECHARGE
+        </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+         <link rel="stylesheet" type="text/css" href="../pipa/css/jitus.css">
+    </head>
+    <body>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+       
+<center><h1><b>Information ABC Company</b></h1></center>
+<center><h6 style="color:#ff0000;" > लगेचच ABC सध्याच्या ग्राहकांना दररोज दीड जीबी अतिरिक्त डेटा देऊ केला आहे. जिओच्या नव्या ऑफरनुसार १४९, ३४९, ३९९ व ४४९ रुपयांच्या प्लॅनवर रोज तीन जीबी डेटा मिळेल</h6></center>
+<form action="fauction.php" method="POST">
+          <div class="container">
+              <div class="form-group">
+                  <label class="col-sm-2" for="fname">
+                    <b> First Name</b> 
+                  </label>
+                  <div class="col-sm-10">
+                      <input type="text" name="firstname" class="form-control" id="fname">
+
+
+                  </div>
+
+              </div>
+
+              <div class="form-group">
+                <label class="col-sm-2" for="lname">
+                   <b>Last Name</b> 
+                </label>
+                <div class="col-sm-10">
+                    <input type="text" name="lastname" class="form-control" id="lname">
+                    
+                </div>
+
+            </div>
+
+            <div id="gi" class="form-group">
+                <label id="gi" class="col-sm-2" for="email">
+                  <b>Email Add</b>
+                </label>
+                <div  id="gi"class="col-sm-10">
+                    <input type="text" name="email" class="form-control" id="email"  >
+                    
+
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2" for="birthdaydate">
+                   <b> Birthday Date </b>
+                </label>
+                <div class="col-sm-10">
+                    <input type="date" name="birthdaydate" class="form-control" id="birthdaydate" >
+                    
+
+                </div>
+
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2" for="mobail">
+                    <b>  Mobail Number</b>
+                </label>
+                <div class="col-sm-10">
+                    <input type="text" name="mobail" class="form-control" id="mobail">
+                </div>
+
+            </div>
+            &nbsp;&nbsp;
+            <label class="col-sm-2" for="gender">
+                <b> Gender Select</b>
+                </label>
+                
+            <input type="radio" name="gender" value="male"> <b>Male</b>
+            <input type="radio" name="gender" value="female"> <b>Female</b>
+            <input type="radio" name="gender" value="other"><b> Other</b>
+       
+            <br><br>
+            <div class="form-group">
+                <div class="row">
+                    <center>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="submit" name="submit" class="btn btn-outline-success"  value="submit data"id="lo" onclick="alert('JIO रिचार्ज यशस्वी चेक मोबाईल फोन')">
+                    &nbsp;   &nbsp;   &nbsp;
+                    <input type="reset" name="reset" class="btn btn-outline-danger"value="cancel">
+                </center>
+                </div>
+            </div>
+       
+          </div>
+
+        </form>
+       <script type="text/javascript">
+       function validation()
+       {
+           var gi=document.getElementById("gi");
+           var email=document.getElementById("email").valuel
+           var text=document.getElementById("text");
+           var pattern= /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+           if (email.match(pattern))
+           {
+               gi.classList.add("valid");
+               gi.classList.remove("invalid");
+           }
+           else
+           {
+            gi.classList.remove("valid");
+            gi.classList.add("invalid");
+           }
+       }
+
+
+       </script>
+    </body>
+</html>
